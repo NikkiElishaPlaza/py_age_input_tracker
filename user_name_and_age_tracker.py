@@ -16,11 +16,7 @@ while True:
             else:
                 print(f"Kindly enter a valid name that contains letters and not numbers.")
     
-<<<<<<< HEAD
     while True:
-=======
-while True:
->>>>>>> e8516e2eec97371ac1cf04995e81978a11e2a82e
         try:
             get_user_age = int(input("Kindly enter their age: "))
             break
