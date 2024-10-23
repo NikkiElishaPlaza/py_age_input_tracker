@@ -6,23 +6,26 @@ getting_user_input = []
 print("Welcome to user name and age tracker!")
 
 while True:
-        get_user_name = input("Kindly enter a name: ")
+    while True:
+            get_user_name = input("Kindly enter a name: ")
 
-        if get_user_name.isalpha():
-            break
-        else:
-            print("Kindly enter a valid name that contains letters and not numbers.")
+            #Check if the user input contain alphabets only and not numbers
+            if get_user_name.isalpha():
+                break
+            # Print error message when the input is not valid. 
+            else:
+                print(f"Kindly enter a valid name that contains letters and not numbers.")
     
-while True:
+    while True:
         try:
             get_user_age = int(input("Kindly enter their age: "))
             break
-
+        # Print error message when the input is not valid. 
         except:
             print("Boss, error. Kindly enter a valid answer.")
     
 
-# Print error message when the input is not valid. 
+
 # Store all the collected information into array. 
 # After every input, will ask the user if want to input another entry. 
 #   When “Yes”, will ask the user again for input. Doing it until the user respond “No”. 
