@@ -1,5 +1,15 @@
 # Creating a program that ask user to input name and age.
 # Set definition of valid name and valid age. 
+
+getting_user_input = []
+
+print("Welcome to user name and age tracker!")
+
+while True:
+    get_user_name = input("Kindly enter a name: ")
+
+    
+
 # Print error message when the input is not valid. 
 # Store all the collected information into array. 
 # After every input, will ask the user if want to input another entry. 
