@@ -6,8 +6,12 @@ getting_user_input = []
 print("Welcome to user name and age tracker!")
 
 while True:
-    get_user_name = input("Kindly enter a name: ")
+    try:
+        get_user_name = input("Kindly enter a name: ")
+        get_user_age = int(input("Kindly enter their age: "))
 
+    except:
+        print("Boss, error. Kindly input again.")
     
 
 # Print error message when the input is not valid. 
