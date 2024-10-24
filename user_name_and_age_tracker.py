@@ -24,7 +24,9 @@ while True:
         except:
             print("Boss, error. Kindly enter a valid answer.")
 
-# Store all the collected information into array. 
+# Store all the collected information into array.
+    getting_user_input.append((get_user_name, get_user_age)) 
+    
     while True:
 # After every input, will ask the user if want to input another entry.
         print("Thank you for using user name and age tracker!")
