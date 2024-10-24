@@ -36,9 +36,8 @@ while True:
 
 #   When the user responded “No”, display the name and age of the oldest person. Use the array in checking who is the oldest.
     if user_choice == "no":
-            print("\nList of Entered Names and Ages:")
-            print(f"{'Name':<20} {'Age':<10}")
-
+            print("Here are all the data inputted: ")
+    
             for person in getting_user_input:
                 print(f"{person[0]:<20} {person[1]:<10}")
 
