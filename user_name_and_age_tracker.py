@@ -28,11 +28,13 @@ while True:
     getting_user_input.append((get_user_name, get_user_age)) 
 
     while True:
+            print("Your data has been inputted.")
+            break
 # After every input, will ask the user if want to input another entry.
-        user_choice = input("Would you like to input again? (yes/no): ")
+    user_choice = input("Would you like to input again? (yes/no): ")
 
 #   When the user responded “No”, display the name and age of the oldest person. Use the array in checking who is the oldest.
-        if user_choice == "no":
+    if user_choice == "no":
                 print("Here are all the data inputted: ")
         
                 for person in getting_user_input:
@@ -47,10 +49,10 @@ while True:
                 break
 
     #   When “Yes”, will ask the user again for input. Doing it until the user respond “No”. 
-        elif user_choice == "yes":
+    elif user_choice == "yes":
             continue
 
-        else:
+    else:
             #Error message
             error = input("Invalid choice, please enter 'yes' or 'no': ")
 
