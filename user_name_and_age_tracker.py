@@ -42,7 +42,7 @@ while True:
             for person in getting_user_input:
                 print(f"{person[0]:<20} {person[1]:<10}")
 
-            oldest_person = getting_user_input[0]  # Assuming that the first input is the oldest person
+            oldest_person = getting_user_input[0]  # Assuming the first input is the oldest
             for person in getting_user_input:
                 if person[1] > oldest_person[1]:  # Compare ages to find the oldest
                     oldest_person = person
@@ -51,6 +51,16 @@ while True:
             break
 
 #   When “Yes”, will ask the user again for input. Doing it until the user respond “No”. 
-    elif user_choice != "yes":
-        print("Invalid choice, please enter 'yes' or 'no'.") 
+    elif user_choice == "yes":
+        continue
+
+    else:
+        #Error message
+        error = input("Invalid choice, please enter 'yes' or 'no': ")
+
+        if error == "no":
+            break
+
+        elif error == "yes":
+            continue
         
