@@ -23,10 +23,18 @@ while True:
         # Print error message when the input is not valid. 
         except:
             print("Boss, error. Kindly enter a valid answer.")
-    
-
 
 # Store all the collected information into array. 
-# After every input, will ask the user if want to input another entry. 
+    while True:
+# After every input, will ask the user if want to input another entry.
+        print("Thank you for using user name and age tracker!")
+        break
+
+    user_choice = input("Would you like to input again? (yes/no) ")
+
 #   When “Yes”, will ask the user again for input. Doing it until the user respond “No”. 
+    if user_choice == "yes":
+        print(getting_user_input)
 #   When the user responded “No”, display the name and age of the oldest person. Use the array in checking who is the oldest.
+    else: 
+        user_choice == "no"
