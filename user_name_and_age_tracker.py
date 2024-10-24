@@ -3,7 +3,7 @@
 
 getting_user_input = []
 
-print("Welcome to user name and age tracker!")
+print("\nWelcome to user name and age tracker!")
 
 while True:
     while True:
@@ -29,37 +29,34 @@ while True:
 
     while True:
 # After every input, will ask the user if want to input another entry.
-        print("Thank you for using user name and age tracker!")
-        break
-
-    user_choice = input("Would you like to input again? (yes/no): ")
+        user_choice = input("Would you like to input again? (yes/no): ")
 
 #   When the user responded “No”, display the name and age of the oldest person. Use the array in checking who is the oldest.
-    if user_choice == "no":
-            print("Here are all the data inputted: ")
-    
-            for person in getting_user_input:
-                print(f"{person[0]:<20} {person[1]:<10}")
+        if user_choice == "no":
+                print("Here are all the data inputted: ")
+        
+                for person in getting_user_input:
+                    print(f"{person[0]:<20} {person[1]:<10}")
 
-            oldest_person = getting_user_input[0]  # Assuming the first input is the oldest
-            for person in getting_user_input:
-                if person[1] > oldest_person[1]:  # Compare ages to find the oldest
-                    oldest_person = person
+                oldest_person = getting_user_input[0]  # Assuming the first input is the oldest
+                for person in getting_user_input:
+                    if person[1] > oldest_person[1]:  # Compare ages to find the oldest
+                        oldest_person = person
 
-            print(f"The oldest person is {oldest_person[0]} with {oldest_person[1]} years of age." "\nThank you for using user name and age tracker!" )
-            break
+                print(f"The oldest person is {oldest_person[0]} with {oldest_person[1]} years of age." "\nThank you for using user name and age tracker!" )
+                break
 
-#   When “Yes”, will ask the user again for input. Doing it until the user respond “No”. 
-    elif user_choice == "yes":
-        continue
-
-    else:
-        #Error message
-        error = input("Invalid choice, please enter 'yes' or 'no': ")
-
-        if error == "no":
-            break
-
-        elif error == "yes":
+    #   When “Yes”, will ask the user again for input. Doing it until the user respond “No”. 
+        elif user_choice == "yes":
             continue
+
+        else:
+            #Error message
+            error = input("Invalid choice, please enter 'yes' or 'no': ")
+
+            if error == "no":
+                break
+
+            elif error == "yes":
+                continue
         
